@@ -3,12 +3,16 @@ const mongoose = require('mongoose');
  
  const userSchema = new Schema({
     name: String,
-    googleId: {
-      type: String,
-      required: true
-    },
-    email: String,
-    avatar: String
+    // googleId: {
+    //   type: String,
+    //   required: true
+    // },
+    // email: String,
+    // avatar: String
+    workoutSession: {
+        type: Schema.Types.ObjectId,
+        ref: 'WorkoutSession'
+    }
     
   }, {
     timestamps: true

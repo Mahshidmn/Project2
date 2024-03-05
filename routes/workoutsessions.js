@@ -1,16 +1,15 @@
 const express = require('express');
 const router = express.Router();
 
-const workoutsController = require('../controllers/workouts');
+const workoutSessionsController = require('../controllers/workoutSessions');
 
-// GET /workouts
-router.get('/',workoutsController.index);
+// GET /workoutsessions
+router.get('/',workoutSessionsController.index);
+// GET /workoutsessions/new
+router.get('/new', workoutSessionsController.new);
+// GET /workoutsessions/:id
+router.get('/:id', workoutSessionsController.show);
+// POST /workoutsessions
+router.post('/', workoutSessionsController.create);
 
-// GET /workouts/new
-router.get('/new', workoutsController.new);
-// GET /workouts/:id
-router.get('/:id', workoutsController.show);
-// POST /workouts
-router.post('/', workoutsController.create);
-
-module.exports = router;
+module.exports = router;    

@@ -9,7 +9,8 @@ require('dotenv').config();
 require('./config/database');
 
 var indexRouter = require('./routes/index');
-var workoutsRouter = require('./routes/workouts');
+var workoutSessionsRouter = require('./routes/workoutsessions');
+ var workoutsRouter = require('./routes/workouts');
 
 var app = express();
 
@@ -24,6 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/workoutsessions', workoutSessionsRouter);
 app.use('/workouts', workoutsRouter);
 
 // catch 404 and forward to error handler

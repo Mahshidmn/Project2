@@ -1,12 +1,12 @@
 <%- include('../partials/header') %>
 
 <section>
-    <h2>Legs</h2>
-    <table id="legs">
+    <h2>Legs and Glute</h2>
+    <table id="legs and glute">
        
         <tbody>
             <% workouts.forEach(function(w) { %>
-                <% if (w.bodyPart === 'Legs') { %>
+                <% if (w.bodyPart === 'Legs and Glute') { %>
                     <tr>
                         <td><%= w.title %></td>
                         <td><a href="/workouts/<%= w._id %>">DETAILS</a></td>
@@ -66,4 +66,5 @@
         </tbody>
     </table>
 </section>
+<a href="/workouts/new">ADD NEW WORKOUT</a>
 <%- include('../partials/footer') %>

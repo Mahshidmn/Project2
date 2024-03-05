@@ -6,3 +6,18 @@ body {
 a {
   color: #00B7FF;
 }
+
+.add-workout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+

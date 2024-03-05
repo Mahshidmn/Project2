@@ -1,0 +1,28 @@
+<%- include('../partials/header') %>
+
+
+
+
+<section id="show-page">
+  <div>Title: </div>
+  <div><%= workoutSession.title %></div>
+  <div>Difficulty: </div>
+  <div><%= workoutSession.difficulty %></div>
+  <div>Location Type: </div>
+  <div><%= workoutSession.locationType %></div>
+  <div>Completed: </div>
+  <div>
+    <%= workoutSession.completed ? 'Yes' : 'No' %>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+ 
+
+<%- include('../partials/footer') %>

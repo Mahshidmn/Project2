@@ -8,13 +8,12 @@
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
-  <nav>
-  
-    <a href="/workouts"<%- title === 'All Workouts' ? 'class="active"' : '' %>>ALL WORKOUTS</a>
-    <a href="/workouts/new"<%- title === 'Add Flight' ? 'class="active"' : '' %>>ADD WOKOUT</a>
-    <!-- <a href="/workoutsessions/new"	<%- title === 'Add Workoutsession' ? 'class="active"' : '' %>>
-        ADD WORKOUT SESSION</a> -->
+  <nav id="nav-bar">
+    <a href="/workouts">ALL WORKOUTS</a>
+    <a href="/workoutsessions">ALL WORKOUT TEMPLATES</a>
+    <a href="/workoutsessions/new">+ NEW WORKOUT TEMPLATE</a>
+    <!-- <a href="/workoutsessions/show">WORKOUT HISTORY</a>     -->
   </nav>
   <main>
-    <h1><%= title %></h1>
+   
   
