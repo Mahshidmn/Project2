@@ -10,7 +10,9 @@ require('./config/database');
 
 var indexRouter = require('./routes/index');
 var workoutSessionsRouter = require('./routes/workoutsessions');
- var workoutsRouter = require('./routes/workouts');
+var activitiesRouter = require('./routes/activities');
+var workoutsRouter = require('./routes/workouts');
+
 
 var app = express();
 
@@ -26,7 +28,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/workoutsessions', workoutSessionsRouter);
+app.use('/activities', activitiesRouter);
 app.use('/workouts', workoutsRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

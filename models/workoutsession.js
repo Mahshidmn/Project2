@@ -21,9 +21,9 @@ const workoutSessionSchema = new Schema({
     },
     completed: { type: Boolean, default: false },
     
-    workouts:[{
+    activities:[{
       type: Schema.Types.ObjectId,
-      ref: 'Workout'
+      ref: 'Activity'
     }],
   
     }, {

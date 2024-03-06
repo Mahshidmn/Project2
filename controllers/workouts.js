@@ -12,9 +12,7 @@ async function index(req, res) {
     res.render('workouts/show', { workout });
   }
 
-  function newWorkout(req, res) {
-    // We'll want to be able to render an  
-    // errorMsg if the create action fails
+function newWorkout(req, res) {
     res.render('workouts/new');
   }
 
