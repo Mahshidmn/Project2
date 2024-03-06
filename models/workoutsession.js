@@ -25,7 +25,15 @@ const workoutSessionSchema = new Schema({
       type: Schema.Types.ObjectId,
       ref: 'Activity'
     }],
-  
+
+    user : {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+      required: true 
+    },
+    userName: String,
+    userAvatar: String
+    
     }, {
       timestamps: true
     });

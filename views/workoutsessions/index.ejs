@@ -4,6 +4,7 @@
 <table>
   <thead>
     <tr>
+      <th>User</th>
       <th>Title</th>
       <th>Difficulty</th>
     </tr>
@@ -12,6 +13,7 @@
    
     <% workoutSessions.forEach(function(ws) { %>
       <tr>
+        <td class="review-user"><img alt="avatar" src="<%= ws.userAvatar %>" referrerpolicy="no-referrer"><%= ws.userName %>
         <td><%= ws.title %></td>
         <td><%= ws.difficulty %></td>
         <td><a href="/workoutsessions/<%= ws._id %>">DETAILS</a></td>
